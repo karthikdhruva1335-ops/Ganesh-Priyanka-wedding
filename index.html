@@ -13,34 +13,36 @@
         }
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #fcf8f2;
+            background: linear-gradient(135deg, #fdfbf7 0%, #f4ebd0 100%);
             color: #333;
             text-align: center;
             line-height: 1.6;
-            padding: 20px;
+            padding: 15px;
         }
         .container {
-            max-width: 500px;
+            max-width: 480px;
             margin: 0 auto;
             background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(139,0,0,0.1);
             padding: 30px 20px;
             overflow: hidden;
+            border: 1px solid #e6d5b8;
         }
         .ganesha-img {
-            width: 80px;
-            margin-bottom: 15px;
+            width: 90px;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
         }
         h3 {
             font-family: 'Cinzel', serif;
             color: #b8860b;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
         }
         .couple-section {
-            margin: 25px 0;
+            margin: 20px 0;
         }
         .name {
             font-family: 'Cinzel', serif;
@@ -50,7 +52,7 @@
             margin: 5px 0;
         }
         .parents {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #666;
             margin-bottom: 15px;
         }
@@ -59,75 +61,98 @@
             font-size: 1.2rem;
             color: #b8860b;
             margin: 15px 0;
-        }
-        .date-banner {
-            background: #fff8dc;
-            border: 1px dashed #d4af37;
-            padding: 12px;
-            border-radius: 8px;
-            font-family: 'Cinzel', serif;
             font-weight: 600;
-            color: #8b0000;
-            margin: 20px 0;
-            font-size: 1.1rem;
         }
         .message-box {
-            background: #faf0e6;
-            padding: 20px;
-            border-radius: 10px;
+            background: #fdfaf6;
+            border-left: 4px solid #b8860b;
+            border-right: 4px solid #b8860b;
+            padding: 20px 15px;
+            border-radius: 8px;
             margin: 25px 0;
-            font-size: 0.95rem;
-            color: #444;
+            font-size: 0.9rem;
+            color: #555;
         }
         .event-card {
             background: #fff;
-            border: 1px solid #eee;
-            border-radius: 10px;
+            border: 1px solid #f0e6d2;
+            border-radius: 12px;
             padding: 20px;
             margin: 20px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: left;
         }
         .event-card h3 {
             color: #8b0000;
+            font-size: 1.2rem;
             margin-bottom: 10px;
-            font-size: 1.3rem;
+            text-align: center;
+            border-bottom: 1px dashed #e6d5b8;
+            padding-bottom: 8px;
         }
         .event-details {
-            font-size: 0.95rem;
-            color: #555;
+            font-size: 0.9rem;
+            color: #444;
             margin-bottom: 15px;
         }
-        .map-btn {
-            display: inline-block;
+        .map-btn, .cal-btn {
+            display: block;
             background: #8b0000;
             color: #fff;
-            padding: 8px 20px;
-            border-radius: 20px;
+            padding: 10px;
+            border-radius: 25px;
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
+            text-align: center;
             transition: background 0.3s;
+            margin-top: 10px;
         }
-        .map-btn:hover {
+        .map-btn:hover, .cal-btn:hover {
             background: #a52a2a;
+        }
+        .cal-btn {
+            background: #b8860b;
+        }
+        .cal-btn:hover {
+            background: #c99810;
         }
         .footer-contacts {
             margin-top: 30px;
-            font-size: 0.9rem;
             border-top: 1px solid #eee;
             padding-top: 20px;
         }
-        .contact-item {
-            margin: 8px 0;
+        .contact-box {
+            background: #faf6ef;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .contact-box strong {
+            color: #8b0000;
+        }
+        .contact-box a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .credits {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Ganesha Graphic / Placeholder -->
+    <!-- Ganesha Graphic -->
     <div>  
-      <img src="ganesha264.png.jpeg" alt="Ganesha" class="ganesha-img">  
+      <img src="https://i.ibb.co/3055376/ganesha264.png" alt="Ganesha" class="ganesha-img">  
     </div>  
 
     <h3>|| Shree Ganeshaya Namaha ||</h3>  
@@ -147,40 +172,57 @@
     <div class="message-box">  
       <p>  
         To our dear ones,<br> 
-        As we begin a new and important chapter of our lives,<br>
-        it would mean the world to have you by our side<br>
-        to celebrate this joyous occasion! 
+        Life has given us many beautiful moments, but sharing this special milestone with you will be the most cherished one.<br>
+        As we begin our new journey together, your presence would mean the world to us! 
       </p>    
     </div>  
 
-    <!-- Venue Card (Common Venue) -->
+    <!-- Venue & Events Card -->
     <div class="event-card">  
-      <h3>Wedding Venue</h3>  
-      <p class="event-details">  
+      <h3>Wedding & Events</h3>  
+      <p class="event-details" style="text-align: center;">  
         <strong>H.D. Devegowda Samudaya Bhavana</strong><br>  
-        Near Police Quarters, Railway Station Road, K.R. Nagar  
+        <span style="font-size: 0.8rem; color: #666;">Near Police Quarters, Railway Station Road, K.R. Nagar</span>  
       </p>  
 
-      <!-- Reception Event Details -->
-      <div style="margin-bottom: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
-          <h4 style="color: #b8860b; font-family: 'Cinzel', serif; margin-bottom: 5px;">Reception</h4>
-          <p style="font-size: 0.9rem;">🗓️ Wednesday, 28-10-2026<br>⏰ 7:00 PM Onwards</p>
+      <div style="margin-bottom: 15px; background: #faf6ef; padding: 10px; border-radius: 8px;">
+          <strong style="color: #8b0000;">💍 Reception</strong>
+          <p style="font-size: 0.85rem;">🗓️ Wednesday, 28th October 2026<br>⏰ 7:00 PM Onwards</p>
       </div>
 
-      <!-- Dhaara Muhoortha Event Details -->
-      <div style="margin-bottom: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
-          <h4 style="color: #b8860b; font-family: 'Cinzel', serif; margin-bottom: 5px;">Dhaara Muhoortha</h4>
-          <p style="font-size: 0.9rem;">🗓️ Thursday, 29-10-2026<br>⏰ Muhoortha Time: 9:40 AM to 10:40 AM</p>
+      <div style="margin-bottom: 15px; background: #faf6ef; padding: 10px; border-radius: 8px;">
+          <strong style="color: #8b0000;">✨ Dhaara Muhoortha</strong>
+          <p style="font-size: 0.85rem;">🗓️ Thursday, 29th October 2026<br>⏰ 9:40 AM to 10:40 AM</p>
       </div>
 
-      <a href="https://maps.app.goo.gl/" target="_blank" class="map-btn">  
-        📍 View Location  
+      <a href="https://maps.app.goo.gl/nbYorcxGdGiBcHKWA" target="_blank" class="map-btn">  
+        📍 View Location Map  
       </a>  
     </div>
 
-    <!-- Footer Contacts -->
+    <!-- Calendar Button -->
+    <div>
+      <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ASUMMARY:Ganesh%20%26%20Priyanka%20Wedding%0ADESCRIPTION:Wedding%20Reception%20and%20Muhoortha%20at%20H.D.%20Devegowda%20Samudaya%20Bhavana%2C%20K.R.%20Nagar%0ALOCATION:H.D.%20Devegowda%20Samudaya%20Bhavana%2C%20K.R.%20Nagar%0ADTSTART:20261028T183000Z%0ADTEND:20261029T060000Z%0AEND:VEVENT%0AEND:VCALENDAR" download="wedding.ics" class="cal-btn">
+        📅 Add to Calendar
+      </a>
+    </div>
+
+    <!-- Contact Details Section -->
     <div class="footer-contacts">
-        <p style="font-weight: 600; margin-bottom: 10px; color: #444;">Looking forward to your gracious presence!</p>
+        <p style="font-weight: 600; margin-bottom: 12px; color: #444; font-family: 'Cinzel', serif;">Contact For Details</p>
+        
+        <div class="contact-box">
+            <strong>Ganesh (Groom)</strong>
+            <a href="tel:+910000000000">📞 Call / WhatsApp</a>
+        </div>
+        <div class="contact-box">
+            <strong>Family Contact</strong>
+            <a href="tel:+910000000000">📞 Get in Touch</a>
+        </div>
+    </div>
+
+    <div class="credits">
+        ✨ Designed with joy
     </div>
 </div>
 
